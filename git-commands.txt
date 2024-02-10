@@ -1,0 +1,68 @@
+configration of git:
+$ git config --global user.name "Ali Hassan"
+$ git config --global user.email "raoalihassan1145@gmail.com"
+check:  git config --list
+
+clone repo:
+git clone 'repo link'
+git clone https://github.com/raoalihassan0228/git-github-demo.git
+
+Check status:
+$ git status
+(Untracked, Modified, Unmodified, Staged) are statuses
+
+Add new file in repo:
+git add 'file name'
+git add index.html  (now index.html will be on staged status)
+=> git add .  (this command will add all files in repo, now all files will be staged)
+
+Commit method: (Final Stamp on changes)
+git commit -m "message"
+git commit -m "Added new files"
+
+create new git repo:
+git init
+
+
+add local repo on github repo on remote:
+git remote add origin <link>
+git remote add origin https://github.com/raoalihassan0228/Git2.git
+
+To verify remote:
+git remote -v
+
+to check branch:
+git branch
+
+To rename branch:
+git branch -M main
+
+push:
+git push origin main
+
+Default push on main branch:
+git push -u origin main      =>(just one time)
+then:  git push              =>(always on main branch)
+
+
+Make new branch:
+git checkout -b feature
+git checkout -b <branch name>
+
+Switch any branch:
+git checkout <branch name>
+git checkout main
+
+Delete branch:
+git branch -d test
+
+Merging Code:
+git diff <branch name>           (To compare commits, branches, file & more)
+git merge <branch name>           (To merge branches)
+
+
+Pull command:
+git pull origin main             (github to local system | remote repo to local system)
+
+Reset add:
+git reset
